@@ -8,16 +8,6 @@ function StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call StripTrailingWhitespaces()
 
-" custom status line
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-" have a permanent statusline to color
-set laststatus=2
-
-" change the status line color based on mode
-au InsertEnter * hi StatusLine term=reverse ctermbg=red gui=undercurl guisp=red
-au InsertLeave * hi StatusLine term=reverse ctermfg=0 ctermbg=2 gui=bold,reverse
-
 " invisibles
 set list
 set listchars=tab:▸\ ,eol:¬
