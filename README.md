@@ -1,5 +1,11 @@
 first, install [janus](https://github.com/carlhuda/janus)
 
+and add vim-powerline
+
+  cd ~/.janus
+  git clone git://github.com/Lokaltog/vim-powerline.git
+
+
 then install tmux:
 
     brew install tmux
