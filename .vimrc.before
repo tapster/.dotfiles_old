@@ -1,2 +1,4 @@
 call janus#disable_plugin('css-color')
 call janus#disable_plugin('supertab')
+
+"let g:Powerline_symbols = 'fancy'
