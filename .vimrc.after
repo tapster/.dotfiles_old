@@ -16,3 +16,5 @@ set listchars=tab:▸\ ,eol:¬
 let g:CommandTMaxHeight=10
 
 set wildignore+=*/spec/fixtures/cassettes/*,*/app/assets/images/*,*/public/*
+
+command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
