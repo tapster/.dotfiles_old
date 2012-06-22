@@ -8,6 +8,20 @@ function StripTrailingWhitespaces()
 endfunction
 autocmd BufWritePre * :call StripTrailingWhitespaces()
 
+" relative line numbering
+set relativenumber
+
+" toggle relative line numbering with CTL-n
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set number
+  else
+    set relativenumber
+  endif
+endfunc
+
+nnoremap <C-n> :call NumberToggle()<cr>
+
 " invisibles
 set list
 set listchars=tab:▸\ ,eol:¬
@@ -15,6 +29,23 @@ set listchars=tab:▸\ ,eol:¬
 " Command-T
 let g:CommandTMaxHeight=10
 
+" ignore directories
 set wildignore+=*/spec/fixtures/cassettes/*,*/app/assets/images/*,*/public/*
 
+" use zsh style tab completion
+set wildmenu
+set wildmode=longest,list
+
+let mapleader=","
+
+" change ruby 1.8 hashrocket to new 1.9 syntax
 command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')
+
+" keep 200 items in the ex history
+set history=200
+
+" dont use arrow keys
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
