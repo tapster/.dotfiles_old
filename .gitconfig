@@ -32,5 +32,7 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
 [user]
-	name = miles
-	email = miles@thespecials.com
+  name = miles
+  email = miles@thespecials.com
+[push]
+  default = upstream
