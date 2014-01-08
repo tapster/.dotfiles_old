@@ -2,4 +2,6 @@
 "call janus#disable_plugin('supertab')
 call janus#disable_plugin('nerdcommenter')
 
+call janus#disable_plugin('scss')
+
 let g:Powerline_symbols = 'fancy'
