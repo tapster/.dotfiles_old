@@ -2,10 +2,11 @@ first, install [janus](https://github.com/carlhuda/janus)
 
 and add vim-powerline
 
+```
   cd ~/.janus
-  git clone git://github.com/Lokaltog/vim-powerline.git
+  git clone git@github.com:Lokaltog/vim-powerline.git
   git clone git@github.com:benmills/vimux.git
-
+```
 
 then install tmux:
 
