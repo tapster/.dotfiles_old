@@ -4,6 +4,7 @@ and add vim-powerline
 
   cd ~/.janus
   git clone git://github.com/Lokaltog/vim-powerline.git
+  git clone git@github.com:benmills/vimux.git
 
 
 then install tmux:
@@ -22,3 +23,4 @@ then:
     ln -s .dotfiles/.gitconfig .gitconfig
     mkdir -p ~/.oh-my-zsh/custom/plugins/tapster
     ln -s .dotfiles/tapster.plugin.zsh ~/.oh-my-zsh/custom/plugins/tapster/tapster.plugin.zsh 
+    
