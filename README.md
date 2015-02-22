@@ -1,8 +1,13 @@
 first, install [janus](https://github.com/carlhuda/janus)
 
-and add vim-powerline
+```
+curl -Lo- https://bit.ly/janus-bootstrap | bash
+```
+
+and add vim-powerline and vimux
 
 ```
+  mkdir -p ~/.janus
   cd ~/.janus
   git clone git@github.com:Lokaltog/vim-powerline.git
   git clone git@github.com:benmills/vimux.git
