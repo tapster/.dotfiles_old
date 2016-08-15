@@ -28,5 +28,4 @@ then:
     ln -s .dotfiles/.zshrc .zshrc
     ln -s .dotfiles/.gitconfig .gitconfig
     mkdir -p ~/.oh-my-zsh/custom/plugins/tapster
-    ln -s .dotfiles/.oh-my-zsh/custom/plugins/tapster.plugin.zsh
-~/.oh-my-zsh/custom/plugins/tapster/tapster.plugin.zsh
+    ln -s .dotfiles/.oh-my-zsh/custom/plugins/tapster.plugin.zsh ~/.oh-my-zsh/custom/plugins/tapster/tapster.plugin.zsh
